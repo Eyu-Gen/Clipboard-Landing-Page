@@ -27,6 +27,7 @@ p{
 }
 
 a{
+    -webkit-tap-highlight-color: transparent;
     text-decoration: none;
 }
 
@@ -71,7 +72,7 @@ button:active{
     width: 100%;
 }
 
-.para.history, .para.track, .para.access{
+.para{
     font-size: 15px;
     max-width: 400px;
     text-align: center;
@@ -125,6 +126,107 @@ button:active{
     width: 90%;
 }
 
+.subcontainer.supercharge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content.supercharge{
+    font-size: 13px;
+    width: 25%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.superchargeLogo{
+    margin-bottom: 30px;
+}
+
+.paraSupercharge{
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.container.media{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+}
+
+.imageSection{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mediaLogo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container.clipboard{
+    padding-bottom: 100px;
+}
+
+.downloadButtons{
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(230, 230, 230, 0.393);
+    padding-top: 20px;
+}
+
+.footerLogo{
+    width: 40px;
+}
+
+.helpSection{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.help{
+    color: var(--secondaryDark);
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.socialMediaSection{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socialMediaLogo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media only screen and (max-width:415px) {
     .container{
         padding: 50px 30px 30px 30px;
@@ -140,9 +242,10 @@ button:active{
         background-image: url(image/bg-header-mobile.png);
     }
         
-    .para.history, .para.track, .para.access{
+    .para.history, .para.track, .para.access, .paraTrack{
         width: 100%;
         margin-bottom: 30px;
+        text-align: center;
     }
     
     .downloadButtons{
@@ -169,6 +272,37 @@ button:active{
 
     .content.track{
         width: 100%;
+        margin-left: 0;
+    }
+
+    .subcontainer.supercharge{
+        flex-direction: column;
+    }
+
+    .content.supercharge{
+        width: 100%;
+    }
+
+    .container.media{
+        flex-direction: column;
+    }
+
+    .imageSection{
+        width: 40%;
+    }
+    
+    footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .helpSection{
+        display: flex;
+        flex-direction: column;
         text-align: center;
+    }
+
+    .socialMediaSection{
+        margin-bottom: 30px;
     }
 }
