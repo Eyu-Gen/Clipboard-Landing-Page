@@ -49,11 +49,10 @@ button:active{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
 }
 
 .container.header{
-    min-height: 90vh;
-    padding-top: 100px;
     background-image: url(image/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-position: top;
@@ -72,9 +71,9 @@ button:active{
     width: 100%;
 }
 
-.para.history, .para.track{
+.para.history, .para.track, .para.access{
     font-size: 15px;
-    width: 30%;
+    max-width: 400px;
     text-align: center;
     margin: 10px 0px 20px 0px;
 }
@@ -122,8 +121,11 @@ button:active{
     line-height: 20px;
 }
 
+.devicesLogo{
+    width: 90%;
+}
 
-@media only screen and (max-width:376px) {
+@media only screen and (max-width:415px) {
     .container{
         padding: 50px 30px 30px 30px;
     }
@@ -138,7 +140,7 @@ button:active{
         background-image: url(image/bg-header-mobile.png);
     }
         
-    .para.history, .para.track{
+    .para.history, .para.track, .para.access{
         width: 100%;
         margin-bottom: 30px;
     }
@@ -159,7 +161,7 @@ button:active{
         flex-direction: column;
     }
 
-    .laptopLogo{
+    .laptopLogo, .devicesLogo{
         width: 100%;
         left: 0;
         margin-bottom: 40px;
